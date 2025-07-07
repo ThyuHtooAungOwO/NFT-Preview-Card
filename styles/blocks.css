@@ -43,3 +43,17 @@
   border: 1px solid var(--clr-neutral-white);
   border-radius: 50%;
 }
+
+.attribution {
+  text-align: center;
+  font-size: 0.875rem;
+  padding-top: 2.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}

@@ -1,34 +1,46 @@
-.padding-sm {
-  padding: 1.5rem;
+/* Text utilities */
+.text-primary {
+  color: var(--clr-primary-soft-blue);
+  line-height: 1.6;
+}
+.text-accent {
+  color: var(--clr-primary-cyan);
+}
+.text-white {
+  color: var(--clr-neutral-white);
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.flex-row {
-  display: flex;
-  align-items: center;
-}
-
-.jc-center {
-  justify-content: center;
-}
-
-.gap-md {
-  gap: 1rem;
-}
-
-.gap-sm {
-  gap: 0.5rem;
-}
-
-.border-r {
-  border-radius: 0.625rem;
-}
-
+/* Font utilities */
 .fw-light {
   font-weight: var(--fw-light);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+/* Spacing utilities */
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+/* Flex utilities */
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flex-split {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }

@@ -9,58 +9,51 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | NFT preview card component</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <title>NFT Preview Card Component</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="flex-col jc-center gap-md">
-    <main class="card flex-col padding-sm border-r gap-md">
-      <div class="image__container border-r">
-        <img
-          src="./images/image-equilibrium.jpg"
-          alt="Colorful 3D Equilibrium Image"
-          class="image"
-        />
-        <div class="eye__icon-overlay">
-          <img
-            src="./images/icon-view.svg"
-            alt="Eye view Icon"
-            class="eye__icon"
-          />
+  <body>
+    <main class="main">
+      <article class="card">
+        <div class="card__image">
+          <img src="images/image-equilibrium.jpg" alt="Equilibrium NFT" />
         </div>
-      </div>
-      <h1 class="card__title">Equilibrium #3429</h1>
-      <p class="card__description fw-light">
-        Our Equilibrium collection promotes balance and calm.
-      </p>
-      <div class="card__details flex-row">
-        <div class="card__details-left flex-row gap-sm">
-          <img
-            src="./images/icon-ethereum.svg"
-            alt="Light Blue Ethereum Icon"
-          />
-          <span class="ETH">0.041 ETH</span>
+
+        <div class="card__content flow">
+          <h1 class="text-white fw-bold">Equilibrium #3429</h1>
+          <p class="text-primary fw-light">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+
+          <div class="flex-group flex-split">
+            <span class="icon-text text-accent fw-bold">
+              <img src="images/icon-ethereum.svg" alt="" /> 0.041 ETH
+            </span>
+            <span class="icon-text text-primary fw-regular">
+              <img src="images/icon-clock.svg" alt="" /> 3 days left
+            </span>
+          </div>
+
+          <div class="card__divider"></div>
+
+          <div class="card__creator flex-group">
+            <img
+              class="creator-avatar"
+              src="images/image-avatar.png"
+              alt="Jules Wyvern avatar"
+            />
+            <p class="text-primary fw-regular">
+              Creation of <span class="text-white">Jules Wyvern</span>
+            </p>
+          </div>
         </div>
-        <div class="card__details-right flex-row gap-sm">
-          <img src="./images/icon-clock.svg" alt="small grey clock icon" />
-          <span class="fw-light">3 days left</span>
-        </div>
-      </div>
-      <div class="card__creator flex-row gap-md">
-        <img
-          src="./images/image-avatar.png"
-          alt="Card Creator Avatar"
-          class="creator__avatar"
-        />
-        <p class="fw-light">
-          Creation of <span class="creator__name">Jules Wyvern</span>
-        </p>
-      </div>
+      </article>
     </main>
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">PoungMont</a>.
-    </footer>
   </body>
 </html>

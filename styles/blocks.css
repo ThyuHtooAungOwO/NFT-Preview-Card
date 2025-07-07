@@ -1,105 +1,45 @@
-.image__container {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+.card {
+  background-color: var(--clr-neutral-card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 350px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.card__image {
   position: relative;
-  cursor: pointer;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
-.image {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: filter 0.3s ease;
-}
-
-.eye__icon-overlay {
+.card__image:hover::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(178, 100%, 50%, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
+  inset: 0;
+  background: hsla(178, 100%, 50%, 0.5) url(../images/icon-view.svg) no-repeat
+    center;
+  cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
-.eye__icon {
-  width: 3rem;
-  height: 3rem;
-}
-
-.image__container:hover .eye__icon-overlay {
-  opacity: 1;
-}
-
-.image__container:hover .image {
-  filter: brightness(1.2);
-}
-
-.card__title {
-  color: var(--white);
-  font-size: 1.75rem;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-.card__title:hover {
-  color: var(--cyan-400);
+.text-white:hover {
+  color: var(--clr-primary-cyan);
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.card__description {
-  line-height: 1.6;
+.card__content {
+  --flow-space: 1.25rem;
+  padding: 1.5rem 0 0.5rem;
 }
 
-.card__details {
-  width: 100%;
-  justify-content: space-between;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--blue-800);
+.card__divider {
+  height: 1px;
+  background-color: var(--clr-neutral-line);
 }
 
-.ETH {
-  color: var(--cyan-400);
-  font-weight: var(--fw-semiBold);
-}
-
-.card__creator {
-  width: 100%;
-}
-
-.creator__avatar {
-  width: 2.5rem;
-  height: 2.5rem;
+.creator-avatar {
+  width: 2rem;
+  border: 1px solid var(--clr-neutral-white);
   border-radius: 50%;
-  border: 1px solid var(--white);
-}
-
-.creator__name {
-  color: var(--white);
-  transition: all 0.3s ease;
-}
-
-.creator__name:hover {
-  color: var(--cyan-400);
-  cursor: pointer;
-}
-
-.attribution {
-  text-align: center;
-  font-size: 0.875rem;
-}
-
-.attribution a {
-  text-decoration: none;
-  font-weight: var(--fw-semiBold);
-  color: var(--cyan-400);
-}
-
-.attribution a:hover {
-  text-decoration: underline;
 }

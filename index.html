@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="flex-col jc-center gap-md">
+    <main class="card flex-col padding-sm border-r gap-md">
+      <div class="image__container border-r">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="Colorful 3D Equilibrium Image"
+          class="image"
+        />
+        <div class="eye__icon-overlay">
+          <img
+            src="./images/icon-view.svg"
+            alt="Eye view Icon"
+            class="eye__icon"
+          />
+        </div>
+      </div>
+      <h1 class="card__title">Equilibrium #3429</h1>
+      <p class="card__description fw-light">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="card__details flex-row">
+        <div class="card__details-left flex-row gap-sm">
+          <img
+            src="./images/icon-ethereum.svg"
+            alt="Light Blue Ethereum Icon"
+          />
+          <span class="ETH">0.041 ETH</span>
+        </div>
+        <div class="card__details-right flex-row gap-sm">
+          <img src="./images/icon-clock.svg" alt="small grey clock icon" />
+          <span class="fw-light">3 days left</span>
+        </div>
+      </div>
+      <div class="card__creator flex-row gap-md">
+        <img
+          src="./images/image-avatar.png"
+          alt="Card Creator Avatar"
+          class="creator__avatar"
+        />
+        <p class="fw-light">
+          Creation of <span class="creator__name">Jules Wyvern</span>
+        </p>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">PoungMont</a>.
+    </footer>
+  </body>
+</html>
